@@ -79,12 +79,5 @@ public class Challenge
 
             return new ValueChallengeResult<int>(res);
         }
-
-        class BoardReferenceEqualityComparer : IEqualityComparer<(BingoBoard, int)>
-        {
-            public bool Equals((BingoBoard, int) x, (BingoBoard, int) y) => Equals(x.Item1, y.Item1);
-
-            public int GetHashCode((BingoBoard, int) obj) => (obj.Item1 != null ? obj.Item1.GetHashCode() : 0);
-        }
     }
 }
