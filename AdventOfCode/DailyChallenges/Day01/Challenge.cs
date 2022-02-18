@@ -30,7 +30,6 @@ public static class Challenge
 
             var count = input.SplitParse()
                 .WindowLeft(3)
-                //.Where(window  => window.Count == 3)
                 .Pairwise((left, right) => left.Sum() < right.Sum())
                 .Count(b => b);
 
