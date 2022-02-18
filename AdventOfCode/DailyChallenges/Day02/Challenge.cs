@@ -79,7 +79,7 @@ public class Challenge
         
         public ChallengeResult Execute(string? input = null)
         {
-            input = input ?? DefaultInput;
+            input ??= DefaultInput;
         
             //In addition to horizontal position and depth, you'll also need to track a third value, aim,
             // which also starts at 0. The commands also mean something entirely different than you first thought:

@@ -34,4 +34,9 @@ public static class StringExtensions
             i += length + NewLine.Length;
         }
     }
+
+    // public static string StringJoin(this IEnumerable<string> strings, string? join = null) => string.Join(join, strings);
+
+    public static string StringJoin(this IEnumerable<char> strings, string? join = null) =>
+        string.Join(join, strings);
 }

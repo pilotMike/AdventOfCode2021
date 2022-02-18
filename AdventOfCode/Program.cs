@@ -1,8 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using AdventOfCode;
-using AdventOfCode.DailyChallenges;
-using AdventOfCode.DailyChallenges.Day02;
+﻿using AdventOfCode;
+using AdventOfCode.DailyChallenges.Day03;
 
 IChallenge challenge = new Challenge.Part2();
 
