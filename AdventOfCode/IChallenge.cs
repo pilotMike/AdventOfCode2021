@@ -1,5 +1,7 @@
-﻿using AdventOfCode.Lib;
+﻿using System.Runtime.CompilerServices;
+using AdventOfCode.Lib;
 
+[assembly:InternalsVisibleTo("Tests")]
 namespace AdventOfCode;
 
 public interface IChallenge

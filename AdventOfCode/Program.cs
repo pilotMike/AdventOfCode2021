@@ -1,5 +1,5 @@
 ﻿using AdventOfCode;
-using AdventOfCode.DailyChallenges.Day05;
+using AdventOfCode.DailyChallenges.Day06;
 
 IChallenge challenge = new Challenge.Part2();
 
