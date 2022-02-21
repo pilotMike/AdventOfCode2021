@@ -4,18 +4,18 @@ public static class StringExtensions
 {
     private const string NewLine = "\r\n";
     
-    public static IEnumerable<int> SplitParse(this string source)
+    public static IEnumerable<int> SplitParse(this string source, string separator = NewLine)
     {
         for (int i = 0; i < source.Length;)
         {
-            var length = source.AsSpan()[i..].IndexOf(NewLine);
+            var length = source.AsSpan()[i..].IndexOf(separator);
             if (length < 0) length = source.Length - i;
             
             var sub = source.AsSpan().Slice(i, length).Trim();
             var num = int.Parse(sub);
             yield return num;
 
-            i += length + NewLine.Length;
+            i += length + separator.Length;
         }
     }
 
